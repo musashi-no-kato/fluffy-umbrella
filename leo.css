@@ -1,0 +1,109 @@
+body{
+	font-family:cursive ;
+    background-color: rgba(245, 176, 65, 1.0) ;
+    font-size: 1.1rem;
+    line-height: 1.2em;
+   margin: 0;
+}
+h1{
+	font-size: 2rem;
+	line-height: 1.3em;
+}
+p{
+	margin-bottom: 1.6em;
+}
+
+.container{
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+
+}
+.header{
+	background: #333;
+	color: white;
+	padding: 2rem 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+}
+.header a{
+	color: white;
+	text-decoration: none;
+}
+.logo-nav-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.logo{
+	letter-spacing: 15px;
+	font-size: 1.2em;
+	font-family: gregory;
+}
+.menu-icon{
+	display: none;
+}
+.navegation ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+.navegation ul li{
+		display: inline-block;
+}
+
+.navegation ul li a {
+	display: block;
+	padding: 0.5rem 1rem;
+	transition: all 0.4s linear ;
+	border-radius: 5px;
+}
+.navegation ul li a:hover {
+	background: gray;
+}
+.footer{
+	background: darkgray;
+	padding: 2rem 0;
+	text-align: center;
+    margin-top: 6rem ;
+}
+.main{
+	padding-top: 10rem;
+}
+
+@media only screen and (max-width: 767px) {
+   .menu-icon{
+   	display: block;
+   	cursor: pointer;
+   	padding: 0.5 rem 1;
+   }
+
+	.navegation{
+		width: 100%;
+		margin-top: 1rem;
+	}
+    .navegation ul{
+    	display: none;
+    }
+
+    .navegation ul.show {
+    	display: block;
+    }
+
+	.navegation ul li{
+		display: block;
+}
+
+.navegation ul li a {
+	display: block;
+	padding: 0.5rem 0rem;
+	transition: all 0.4s linear ;
+	border-radius: 5px;
+}
+.navegation ul li a:hover {
+	background: gray;
+}
